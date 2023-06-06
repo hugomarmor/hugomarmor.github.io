@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="hugo.marmor">
+    <title>Página Entrenadores</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            /*background-color: #f89462;*/
+            background-image: url("fondo2.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        header {
+            background-color: #333;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo img {
+            width: 100px;
+            height: 100px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            font-family: 'Pacifico', cursive;
+            font-size: 20px;
+            text-decoration: none;
+            color: #b5f520;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            /* Estilos para dispositivos móviles */
+            header {
+                padding: 10px;
+            }
+
+            .logo img {
+                width: 80px;
+                height: 80px;
+            }
+
+            nav ul li {
+                margin-left: 10px;
+            }
+
+        }
+
+        .menu li a:hover {
+            background-color: #e64400;
+        }
+
+        .entrenador {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+
+        .entrenador:hover {
+            transform: scale(1.1);
+        }
+
+        .entrenador-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .entrenador-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .entrenador-info {
+            width: 600px; /* Ancho fijo */
+            padding: 20px;
+            background-color: #f5f5f5;
+            border-radius: 20px;
+            border: 2px solid #333;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+        }
+
+        .entrenador-nombre {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .entrenador-descripcion {
+            margin-top: 10px;
+        }
+
+        .entrenador-logros {
+            margin-top: 10px;
+        }
+
+        .entrenador-logros li {
+            margin-bottom: 5px;
+        }
+
+        h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 60px;
+            -webkit-text-stroke: 2px #000;
+            -webkit-text-fill-color: #b5f30b;
+            text-align: center;
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo del gimnasio">
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="inicio_shitoryu_hugo.marmor.html">Inicio</a></li>
+                <li><a href="servicios_shitoryu_hugo.marmor.html">Servicios</a></li>
+                <li><a href="#">Entrenadores</a></li>
+                <li><a href="eventos_shitoryu_hugo.marmor.html">Eventos</a></li>
+                <li><a href="licencias_shitoryu_hugo.marmor.html">Licencias</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Entrenadores</h1>
+        <div class="entrenador">
+            <div class="entrenador-img">
+                <img src="mireia.png" alt="Foto de Mireia Lopéz">
+            </div>
+            <div class="entrenador-info">
+                <h2 class="entrenador-nombre">Mireia Lopéz</h2>
+                <p class="entrenador-descripcion">Clases de Jiu-Jitsu</p>
+                <ul class="entrenador-logros">
+                    <li>Campeona Nacional de Jiu-Jitsu</li>
+                    <li>Medallista de Oro en el Campeonato Mundial de Jiu-Jitsu</li>
+                </ul>
+            </div>
+        </div>
+        <div class="entrenador">
+            <div class="entrenador-img">
+                <img src="ricardo.png" alt="Foto de Ricardo Santos">
+            </div>
+            <div class="entrenador-info">
+                <h2 class="entrenador-nombre">Ricardo Santos</h2>
+                <p class="entrenador-descripcion">Clases de Karate</p>
+                <ul class="entrenador-logros">
+                    <li>Campeón Regional de Karate</li>
+                    <li>Medallista de Plata en el Campeonato Nacional de Karate</li>
+                </ul>
+            </div>
+        </div>
+        <div class="entrenador">
+            <div class="entrenador-img">
+                <img src="juan.png" alt="Foto de Juan Benito">
+            </div>
+            <div class="entrenador-info">
+                <h2 class="entrenador-nombre">Juan Benito</h2>
+                <p class="entrenador-descripcion">Clases de Kung-Fu</p>
+                <ul class="entrenador-logros">
+                    <li>Medallista de Bronce en el Campeonato Internacional de Kung-Fu</li>
+                    <li>Ganador del Premio al Mejor Maestro de Kung-Fu</li>
+                </ul>
+            </div>
+        </div>
+        <div class="entrenador">
+            <div class="entrenador-img">
+                <img src="miguel.png" alt="Foto de Miguel Rivas">
+            </div>
+            <div class="entrenador-info">
+                <h2 class="entrenador-nombre">Miguel Rivas</h2>
+                <p class="entrenador-descripcion">Clases de Taekwondo</p>
+                <ul class="entrenador-logros">
+                    <li>Campeón Nacional de Taekwondo</li>
+                    <li>Ganador del Premio al Mejor Técnica de Taekwondo</li>
+                </ul>
+            </div>
+        </div>
+        <div class="entrenador">
+            <div class="entrenador-img">
+                <img src="maria.png" alt="Foto de María González">
+            </div>
+            <div class="entrenador-info">
+                <h2 class="entrenador-nombre">María González</h2>
+                <p class="entrenador-descripcion">Clases de Muay Thai</p>
+                <ul class="entrenador-logros">
+                    <li>Campeona Mundial de Muay Thai</li>
+                    <li>Medallista de Oro en el Campeonato Europeo de Muay Thai</li>
+                </ul>
+            </div>
+        </div>
+        <div class="entrenador">
+            <div class="entrenador-img">
+                <img src="pepe.png" alt="Foto de Pepe Domingo">
+            </div>
+            <div class="entrenador-info">
+                <h2 class="entrenador-nombre">Pepe Domingo</h2>
+                <p class="entrenador-descripcion">Clases de Kickboxing</p>
+                <ul class="entrenador-logros">
+                    <li>Ganador del Título Nacional de Kickboxing</li>
+                    <li>Medallista de Plata en el Campeonato Mundial de Kickboxing</li>
+                </ul>
+            </div>
+        </div>
+        <div class="entrenador">
+            <div class="entrenador-img">
+                <img src="lucas.png" alt="Foto de Lucas Sánchez">
+            </div>
+            <div class="entrenador-info">
+                <h2 class="entrenador-nombre">Lucas Sánchez</h2>
+                <p class="entrenador-descripcion">Clases para niños</p>
+                <ul class="entrenador-logros">
+                    <li>Especialista en Entrenamiento para Niños</li>
+                    <li>Ganador del Premio al Mejor Maestro de Artes Marciales para Niños</li>
+                </ul>
+            </div>
+        </div>
+        <div class="entrenador">
+            <div class="entrenador-img">
+                <img src="laura.png" alt="Foto de Laura Martín">
+            </div>
+            <div class="entrenador-info">
+                <h2 class="entrenador-nombre">Laura Martín</h2>
+                <p class="entrenador-descripcion">Entrenamiento personalizado</p>
+                <ul class="entrenador-logros">
+                    <li>Experta en Entrenamiento Personalizado</li>
+                    <li>Ganadora del Premio al Mejor Entrenador Personal</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

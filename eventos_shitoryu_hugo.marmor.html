@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="hugo.marmor">
+    <title>Página Eventos</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            /*background-color: #f89462;*/
+            background-image: url("fondo2.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        header {
+            background-color: #333;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo img {
+            width: 100px;
+            height: 100px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            font-family: 'Pacifico', cursive;
+            font-size: 20px;
+            text-decoration: none;
+            color: #b5f520;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            /* Estilos para dispositivos móviles */
+            header {
+                padding: 10px;
+            }
+
+            .logo img {
+                width: 80px;
+                height: 80px;
+            }
+
+            nav ul li {
+                margin-left: 10px;
+            }
+        }
+
+        .menu li a:hover {
+            background-color: #e64400;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .evento {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 20px;
+            border: 2px solid #333;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 0 auto;
+            max-width: 800px;
+            margin-bottom: 30px;
+        }
+
+        .evento h2 {
+            margin-bottom: 10px;
+        }
+
+        .evento p {
+            margin-bottom: 5px;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        h1.titulo-eventos {
+            font-family: 'Pacifico', cursive;
+            font-size: 60px;
+            -webkit-text-stroke: 2px #000;
+            -webkit-text-fill-color: #b5f30b;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo del gimnasio">
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="inicio_shitoryu_hugo.marmor.html">Inicio</a></li>
+                <li><a href="servicios_shitoryu_hugo.marmor.html">Servicios</a></li>
+                <li><a href="entrenadores_shitoryu_hugo.marmor.html">Entrenadores</a></li>
+                <li><a href="#">Eventos</a></li>
+                <li><a href="licencias_shitoryu_hugo.marmor.html">Licencias</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1 class="titulo-eventos">Eventos</h1>
+        <div class="evento">
+            <h2>Competición de Karate</h2>
+            <p>Fecha: 10 de julio de 2023</p>
+            <p>Lugar: Valencia, Dojo Okatu</p>
+            <p>Hora: 9:00 AM - 5:00 PM</p>
+            <p>Descripción: Competición de karate abierta a todos los niveles y edades.</p>
+        </div>
+        <div class="evento">
+            <h2>Examen de Cinturón Negro</h2>
+            <p>Fecha: 15 de agosto de 2023</p>
+            <p>Lugar: Valladolid, Polideportivo</p>
+            <p>Hora: 6:00 PM - 9:00 PM</p>
+            <p>Descripción: Examen de cinturón negro para los estudiantes avanzados que han cumplido con los requisitos necesarios.</p>
+        </div>
+        <div class="evento">
+            <h2>Torneo de Muay Thai</h2>
+            <p>Fecha: 20 de septiembre de 2023</p>
+            <p>Lugar: Salamanca, Dojo Aikido</p>
+            <p>Hora: 10:00 AM - 6:00 PM</p>
+            <p>Descripción: Torneo de muay thai con la participación de luchadores de élite de todo el país.</p>
+        </div>
+    </section>
+</body>
+</html>

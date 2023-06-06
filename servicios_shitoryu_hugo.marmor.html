@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="hugo.marmor">
+    <title>Página Servicios</title>
+    <style>
+body {
+    margin: 0;
+    padding: 0;
+    /*background-color: #f89462;*/
+    background-image: url("fondo2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    background-color: #333;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+    text-decoration: none;
+    color: #b5f520;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    /* Estilos para dispositivos móviles */
+    header {
+        padding: 10px;
+    }
+
+    .logo img {
+        width: 80px;
+        height: 80px;
+    }
+
+    nav ul li {
+        margin-left: 10px;
+    }
+}
+
+.menu li a:hover {
+    background-color: #e64400;
+}
+
+.servicios {
+    padding: 50px;
+}
+
+.servicios h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 60px;
+    -webkit-text-stroke: 2px #000;
+    -webkit-text-fill-color: #b5f30b;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    animation: fadeInUp 1s ease-in-out;
+
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.servicios-lista {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.servicios-item {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    border: 2px solid #333;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    margin-top: 30px;
+    transition: transform 0.3s ease;
+}
+
+.servicios-item:hover {
+    transform: scale(1.1);
+}
+
+.servicios-item a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.servicios-item p {
+    margin-top: 20px;
+}
+
+.servicios-item form {
+    margin-top: 20px;
+}
+
+.servicios-item form input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.servicios-item form textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.servicios-item form button {
+    background-color: #ff5500;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.servicios-item form button:hover {
+    background-color: #e64400;
+}
+
+h2 {
+    color: #f89462;
+}
+
+.servicios-item .image-container {
+    max-width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.servicios-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo del gimnasio">
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="inicio_shitoryu_hugo.marmor.html">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="entrenadores_shitoryu_hugo.marmor.html">Entrenadores</a></li>
+                <li><a href="eventos_shitoryu_hugo.marmor.html">Eventos</a></li>
+                <li><a href="licencias_shitoryu_hugo.marmor.html">Licencias</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="servicios">
+        <h1 class="animated fedaInUp">Servicios</h1>
+        <div class="servicios-lista">
+            <div class="servicios-item">
+                <h2>Clases de Jiu-Jitsu</h2>
+                <div class="image-container">
+                <img src="jiujitsu.jpg" alt="Clases de Jiu-Jitsu">
+                </div>
+                <p><b>Descripción del servicio:</b> Las clases de Jiu-Jitsu te ofrecen la oportunidad de sumergirte en el fascinante mundo de las artes marciales. 
+                    Aprenderás técnicas de autodefensa efectivas, enfocadas en el combate cuerpo a cuerpo y la sumisión del oponente. Durante la clase, trabajarás 
+                    en el perfeccionamiento de movimientos de agarre, llaves y estrangulaciones, desarrollando habilidades tanto en el suelo como de pie. Además, 
+                    mejorarás tu flexibilidad, fuerza y resistencia mientras practicas con compañeros de diferentes niveles.</p>
+                <p><b>Horarios:</b> Lunes a Viernes, 18:00 - 20:00</p>
+                <p><b>Profesor:</b> Mireia Lopéz</p>
+                <p><b>Precio:</b> 50€/mes</p>
+                <form>
+                    <input type="text" placeholder="Nombre completo" required>
+                    <input type="email" placeholder="Correo electrónico" required>
+                    <input type="tel" placeholder="Número de teléfono" required>
+                    <button type="submit">Inscribirse</button>
+                </form>
+            </div>
+            <div class="servicios-item">
+                <h2>Clases de Karate</h2>
+                <div class="image-container">
+                <img src="karate.png" alt="Clases de Karate">
+                </div>
+                <p><b>Descripción del servicio:</b> En nuestras clases de Karate, te sumergirás en un apasionante viaje hacia el mundo de las artes marciales japonesas. 
+                    Durante la clase, aprenderás la importancia de la disciplina, el respeto y el autocontrol. Mediante la práctica constante, desarrollarás habilidades 
+                    físicas y mentales, fortaleciendo tu cuerpo y tu mente al mismo tiempo. Desde posiciones y movimientos básicos hasta katas (secuencias de movimientos) 
+                    y técnicas de combate, explorarás las diversas facetas del karate.</p>
+                <p><b>Horarios:</b> Martes y Jueves, 17:00 - 19:00</p>
+                <p><b>Profesor:</b> Ricardo Santos</p>
+                <p><b>Precio:</b> 60€/mes</p>
+                <form>
+                    <input type="text" placeholder="Nombre completo" required>
+                    <input type="email" placeholder="Correo electrónico" required>
+                    <input type="tel" placeholder="Número de teléfono" required>
+                    <button type="submit">Inscribirse</button>
+                </form>
+            </div>
+            <div class="servicios-item">
+                <h2>Clases de Kung-fu</h2>
+                <div class="image-container">
+                <img src="kungfu.jpg" alt="Clases de Kung-fu">
+                </div>
+                <p><b>Descripción del servicio:</b> En nuestras clases de Kung Fu, te embarcarás en un fascinante viaje hacia las antiguas tradiciones de las artes marciales 
+                    chinas. En nuestras clases, explorarás una amplia gama de estilos de Kung Fu, como el Wing Chun, Shaolin, Tai Chi, entre otros. Aprenderás técnicas de golpeo, 
+                    patadas, bloqueos, agarres y proyecciones, adaptándolas a diferentes situaciones y aplicaciones prácticas.</p>
+                <p><b>Horarios:</b> Martes y Jueves, 16:30 - 17:30</p>
+                <p><b>Profesor:</b> Juan Benito</p>
+                <p><b>Precio:</b> 50€/mes</p>
+                <form>
+                    <input type="text" placeholder="Nombre completo" required>
+                    <input type="email" placeholder="Correo electrónico" required>
+                    <input type="tel" placeholder="Número de teléfono" required>
+                    <button type="submit">Inscribirse</button>
+                </form>
+            </div>
+            <div class="servicios-item">
+                <h2>Clases de Taekwondo</h2>
+                <div class="image-container">
+                <img src="taekwondo.jpg" alt="Clases de Taekwondo">
+                </div>
+                <p><b>Descripción del servicio:</b> Nuestras clases de taekwondo te brindarán una experiencia dinámica y enérgica en la que aprenderás las técnicas y los principios 
+                    fundamentales de este arte marcial coreano. Aprenderás una amplia variedad de patadas, golpes, bloqueos y técnicas de defensa personal, todo ello enriquecido con 
+                    movimientos fluidos y gráciles. El énfasis estará en la precisión, la velocidad, la potencia y la ejecución adecuada de cada técnica. </p>
+                <p><b>Horarios:</b> Lunes y Sabados, 12:30 - 13:30</p>
+                <p><b>Profesor:</b> Miguel Rivas</p>
+                <p><b>Precio:</b> 55€/mes</p>
+                <form>
+                    <input type="text" placeholder="Nombre completo" required>
+                    <input type="email" placeholder="Correo electrónico" required>
+                    <input type="tel" placeholder="Número de teléfono" required>
+                    <button type="submit">Inscribirse</button>
+                </form>
+            </div>
+            <div class="servicios-item">
+                <h2>Clases de Muay Thai</h2>
+                <div class="image-container">
+                <img src="muaythai.jpg" alt="Clases de Muay Thai">
+                </div>
+                <p><b>Descripción del servicio:</b> Nuestras clases de Muay Thai te ofrecen una experiencia intensa y desafiante que combina el entrenamiento físico, las técnicas de 
+                    combate y la disciplina mental. Durante una clase de Muay Thai, te sumergirás en un programa de entrenamiento completo que incluye ejercicios de calentamiento, 
+                    estiramientos, trabajo de saco, combinaciones de golpes y patadas, técnicas de defensa y sparring controlado. Aprenderás las técnicas características del Muay Thai, 
+                    como los golpes con puños, codazos, rodillas y patadas, y cómo combinarlos de manera fluida y efectiva.</p>
+                <p><b>Horarios:</b> Viernes y Sabados, 21:00 - 22:00</p>
+                <p><b>Profesor:</b> María González</p>
+                <p><b>Precio:</b> 65€/mes</p>
+                <form>
+                    <input type="text" placeholder="Nombre completo" required>
+                    <input type="email" placeholder="Correo electrónico" required>
+                    <input type="tel" placeholder="Número de teléfono" required>
+                    <button type="submit">Inscribirse</button>
+                </form>
+            </div>
+            <div class="servicios-item">
+                <h2>Clases de KickBoxing</h2>
+                <div class="image-container">
+                <img src="kickboxing.jpg" alt="Clases de KickBoxing">
+                </div>
+                <p><b>Descripción del servicio:</b> Nuestras clases de kickboxing son dinámicas, energéticas y te brindarán una experiencia de entrenamiento completa. Durante la clase, 
+                    te guiarán nuestros instructores altamente capacitados y experimentados. Comenzarás con un calentamiento para preparar tu cuerpo, seguido de ejercicios de cardio que 
+                    incluyen golpes y patadas en el aire o en sacos de boxeo. Aprenderás y perfeccionarás diferentes técnicas de puñetazos, patadas, rodillas y codos, combinándolos en 
+                    secuencias fluidas y poderosas.</p>
+                <p><b>Horarios:</b> Martes y Miercoles, 15:00 - 17:00</p>
+                <p><b>Profesor:</b> Pepe Domingo</p>
+                <p><b>Precio:</b> 40€/mes</p>
+                <form>
+                    <input type="text" placeholder="Nombre completo" required>
+                    <input type="email" placeholder="Correo electrónico" required>
+                    <input type="tel" placeholder="Número de teléfono" required>
+                    <button type="submit">Inscribirse</button>
+                </form>
+            </div>
+            <div class="servicios-item">
+                <h2>Clases para niños</h2>
+                <div class="image-container">
+                <img src="niños.jpg" alt="Clases de niños">
+                </div>
+                <p><b>Descripción del servicio:</b> Nuestras clases para niños son divertidas, educativas y están diseñadas para ayudar a los más pequeños a desarrollar habilidades físicas, 
+                    emocionales y sociales a través de la práctica de artes marciales. Nuestro enfoque principal es crear un ambiente seguro y motivador donde los niños puedan aprender y 
+                    crecer de manera positiva. Durante las clases, los niños participarán en una variedad de actividades que incluyen ejercicios de calentamiento, juegos interactivos, 
+                    técnicas básicas de artes marciales y actividades de desarrollo de habilidades. Nuestros instructores capacitados trabajarán en estrecha colaboración con los niños, 
+                    enseñándoles las técnicas adecuadas, fomentando la confianza en sí mismos y promoviendo los valores de respeto, disciplina y trabajo en equipo.</p>
+                <p><b>Horarios:</b> Miércoles y Viernes, 16:00 - 17:00</p>
+                <p><b>Profesor:</b> Lucas Sanchéz</p>
+                <p><b>Precio:</b> 40€/mes</p>
+                <form>
+                    <input type="text" placeholder="Nombre completo" required>
+                    <input type="email" placeholder="Correo electrónico" required>
+                    <input type="tel" placeholder="Número de teléfono" required>
+                    <button type="submit">Inscribirse</button>
+                </form>
+            </div>
+            <div class="servicios-item">
+                <h2>Entrenamiento personalizado</h2>
+                <div class="image-container">
+                <img src="personal.jpg" alt="Entrenamiento personalizado">
+                </div>
+                <p><b>Descripción del servicio:</b> Nuestro servicio de entrenamiento personalizado está diseñado para ayudarte a alcanzar tus metas individuales de forma efectiva y eficiente. 
+                    Ya sea que busques mejorar tu condición física, perder peso, ganar fuerza o mejorar en tu disciplina de artes marciales, nuestro equipo de entrenadores certificados está aquí 
+                    para guiarte en cada paso del camino. El entrenamiento personalizado se adapta completamente a tus necesidades y objetivos específicos. Comenzaremos realizando una evaluación 
+                    completa de tu nivel de condición física, habilidades y limitaciones. Con esta información, diseñaremos un programa de entrenamiento personalizado que se ajuste a tu nivel 
+                    actual y te ayude a progresar de manera constante.</p>
+                <p><b>Horarios:</b> A convenir</p>
+                <p><b>Profesor:</b> Laura Martín</p>
+                <p><b>Precio:</b> 80€/hora(puede variar)</p>
+                <form>
+                    <input type="text" placeholder="Nombre completo" required>
+                    <input type="email" placeholder="Correo electrónico" required>
+                    <input type="tel" placeholder="Número de teléfono" required>
+                    <button type="submit">Inscribirse</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
